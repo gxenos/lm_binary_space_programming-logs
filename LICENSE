@@ -1,0 +1,10 @@
+This repository holds content under these terms.
+
+1. Logs and data (everything not listed under 2 or 3): Creative Commons Attribution 4.0 International (CC BY 4.0),
+   https://creativecommons.org/licenses/by/4.0/legalcode
+
+2. prog5 in exp1_understand/, as a binary and as a hex dump (including the copy inside its prompt): a modified build of
+   FreeBSD's ministat, statically linked against musl. These stay under their own licenses.
+
+3. prog4 in exp1_understand/, as a hex dump (including the copy inside its prompt): a third-party executable of unknown
+   origin, reproduced for research. No license is granted for it.

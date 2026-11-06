@@ -1,0 +1,93 @@
+{
+ "ok": true,
+ "failure": null,
+ "rc": 0,
+ "wall_s": 139.8,
+ "model": "gpt-6.1-sol",
+ "effort": "high",
+ "reasoning_summary": "detailed",
+ "prompt_sha256": "0a85afc1a5e113632737a043de2782b5a817700dfbf164484ef046c5b820e0c5",
+ "thread_in": null,
+ "audit": {
+  "event_types": {
+   "thread.started": 1,
+   "item.completed": 11,
+   "turn.started": 1,
+   "turn.completed": 1
+  },
+  "item_types": {
+   "error": 1,
+   "reasoning": 9,
+   "agent_message": 1
+  },
+  "tool_items": {},
+  "tool_free": true,
+  "unknown_events": [],
+  "unparsed_lines": 0,
+  "usage": {
+   "input_tokens": 21798,
+   "cached_input_tokens": 0,
+   "cache_write_input_tokens": 0,
+   "output_tokens": 6859,
+   "reasoning_output_tokens": 4660
+  },
+  "thread_id": "id-20fd7605",
+  "errors": [],
+  "notices": [
+   "Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."
+  ],
+  "turn_completed": true,
+  "wire": {
+   "requests": 1,
+   "tools_removed": [
+    "exec",
+    "wait"
+   ],
+   "tools_sent": 0,
+   "rejected": 0,
+   "prompt_delivered": true,
+   "prompt_is_sole_input": true,
+   "models": [
+    "gpt-6.1-sol"
+   ],
+   "reasoning": {
+    "effort": "high",
+    "summary": "detailed",
+    "context": "all_turns"
+   }
+  },
+  "lockdown_ok": true
+ },
+ "stderr_tail": "",
+ "cmd": [
+  "codex",
+  "exec",
+  "-c",
+  "model_provider=\"bx_relay\"",
+  "-c",
+  "model_providers.bx_relay={name=\"relay\",base_url=\"http://127.0.0.1:51904\",wire_api=\"responses\",requires_openai_auth=true}",
+  "--strict-config",
+  "--skip-git-repo-check",
+  "--ignore-rules",
+  "--json",
+  "-m",
+  "gpt-6.1-sol",
+  "-c",
+  "model_reasoning_effort=\"high\"",
+  "-c",
+  "model_reasoning_summary=\"detailed\"",
+  "-c",
+  "model_auto_compact_token_limit=100000000",
+  "-c",
+  "model_instructions_file=\"<repo>/harness/instructions.md\"",
+  "-c",
+  "model_catalog_json=\"<repo>/harness/model_catalog.json\"",
+  "-o",
+  "<repo>/exp2_patch/runs/gpt-6.1-sol-high/prog3/a1/turns/t001/answer.md",
+  "-"
+ ],
+ "start": "2026-11-06T12:35:48+00:00",
+ "end": "2026-11-06T12:38:08+00:00",
+ "attempt": 1,
+ "codex_version": "0.166.0"
+}
